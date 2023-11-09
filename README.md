@@ -13,5 +13,5 @@ Option 1: Attendance tracking system
 - Kyle (kyle.beale.20@cnu.edu)
 ### Web administrator
 - AJ (andrew.muir.22@cnu.edu)
-### Database administrator: MySQL/RDS
+### Database administrator:
 - Tristen (tristan.hintz.20@cnu.edu)
