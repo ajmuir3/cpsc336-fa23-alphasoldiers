@@ -1,7 +1,7 @@
 <?php
 function OpenCon()
 {
-$dbhost = ""
+$dbhost = "database-1.ccpsbdiz3ypq.us-east-1.rds.amazonaws.com"
 $dbuser = "admin"
 $dbpass = "CPSC336_Final!"
 $db = "instore"
