@@ -14,21 +14,22 @@
         </h4>
         
 	<?php
+	include ('connect.php');
 	session_start();
 	
 	if (isset($_POST['button1'])) {
-		$_SESSION['count'] += 1;
+		$_SESSION['custCount'] += 1;
 	}
 	else if (isset($_POST['button2'])) {
-		if ($_SESSION['count'] > 0) {
-			$_SESSION['count'] -= 1;
+		if ($_SESSION['custCount'] > 0) {
+			$_SESSION['custCount'] -= 1;
 		}
 	}
 	else if (isset($_POST['button3'])) {
-		$_SESSION['count'] = 0;
+		$_SESSION['custCount'] = 0;
 	}
 	
-	echo($_SESSION['count']);
+	echo($_SESSION['custCount']);
 	?>
      
         <form action="" method="post">
