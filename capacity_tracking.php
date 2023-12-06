@@ -5,17 +5,12 @@
         <title>  
                 Capacity Tracking
         </title>
-</head>
-<style>
-    h1 {color: rgb(210, 45, 45);
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
-</style>
-                        
+</head>                 
 <body style="text-align:center;">   
                  
-        <h1>
+        <h4>
                 Total Customer Count
-        </h1>
+        </h4>
         
 	<?php
 
