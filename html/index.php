@@ -10,3 +10,9 @@
 <p>AJ Muir, Tristan Hintz, Kyle Beale</p>
 </body>
 </html>
+<?php
+include 'connect.php';
+$conn = OpenCon();
+echo "Connect";
+CloseCon($conn);
+?>

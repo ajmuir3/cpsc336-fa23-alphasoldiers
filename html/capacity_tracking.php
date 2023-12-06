@@ -14,22 +14,24 @@
         </h4>
         
 	<?php
-	include ('connect.php');
 	session_start();
-	
+	include 'connect.php';
+	$conn = OpenCon();
 	if (isset($_POST['button1'])) {
-		$_SESSION['custCount'] += 1;
+		$sql = "UPDATE currentCount SET count = count + 1";
+		$conn->query($sql);
 	}
 	else if (isset($_POST['button2'])) {
-		if ($_SESSION['custCount'] > 0) {
-			$_SESSION['custCount'] -= 1;
-		}
+		$sql = "UPDATE currentCount SET count = count - 1";
+                $conn->query($sql);
 	}
 	else if (isset($_POST['button3'])) {
-		$_SESSION['custCount'] = 0;
+		$sql = "UPDATE currentCount SET count = 0";
+                $conn->query($sql);
 	}
-	
-	echo($_SESSION['custCount']);
+	$getCount = 'SELECT count FROM currentCount';
+	$query = mysqli_query($conn,$getCount);
+	echo(mysqli_fetch_assoc($query)['count']);
 	?>
      
         <form action="" method="post">
