@@ -6,12 +6,16 @@
                 Capacity Tracking
         </title>
 </head>
+<style>
+    h1 {color: rgb(210, 45, 45);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+</style>
                         
 <body style="text-align:center;">   
                  
-        <h4>
+        <h1>
                 Total Customer Count
-        </h4>
+        </h1>
         
 	<?php
 
@@ -34,11 +38,11 @@
 	echo($_SESSION['count']);
 	?>
      
-        <form action="" method="post">
-        <input type="submit" name="button1" value="Add Customer">
-	<input type="submit" name="button2" value="Remove Customer">
-	<input type="submit" name="button3" value="Reset Customer">
-        </form>
+    <form action="" method="post">
+    	<input type="submit" name="button1" value="Add Customer">
+		<input type="submit" name="button2" value="Remove Customer">
+		<input type="submit" name="button3" value="Reset Customer">
+    </form>
 	
 	
 </body>
