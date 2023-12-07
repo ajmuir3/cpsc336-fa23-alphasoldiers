@@ -13,6 +13,8 @@
                 Total Customer Count
         </h4>
         
+	<style>
+		spam{font-size:100;}
 	<?php
 	session_start();
 	include 'connect.php';
@@ -31,9 +33,11 @@
 	}
 	$getCount = 'SELECT count FROM currentCount';
 	$query = mysqli_query($conn,$getCount);
-	echo(mysqli_fetch_assoc($query)['count']);
+	<span>
+		echo(mysqli_fetch_assoc($query)['count']);
+	</span>
 	?>
-     
+     	</style>
         <form action="" method="post">
         <input type="submit" name="button1" value="Add Customer">
 	<input type="submit" name="button2" value="Remove Customer">
