@@ -33,10 +33,10 @@
 	$getCount = 'SELECT count FROM currentCount';
 	$query = mysqli_query($conn,$getCount);
 	
-		echo '(<div style="font-size:1.25em;">mysqli_fetch_assoc($query)['count']</div>)';
+		$count = (mysqli_fetch_assoc($query)['count'])
 	
 	?>
-     	
+     	<h1 style = "font-size: 100px;"><?php echo $count; ?></h1>
         <form action="" method="post">
         <input type="submit" name="button1" value="Add Customer">
 	<input type="submit" name="button2" value="Remove Customer">
